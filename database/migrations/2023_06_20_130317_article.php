@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('article', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('contentId');
-            $table->text('contentEn');
+            $table->json('contentId');
+            $table->json('contentEn');
             $table->string('editor');
             $table->timestamp('updated_at')->useCurrent();
         });

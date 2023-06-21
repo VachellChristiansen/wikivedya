@@ -20,7 +20,8 @@ class Article extends Component
         } else {
             $content = [
                 'title' => "Not Found",
-                'contentId' => "None"
+                'contentId' => "None",
+                $this->lang => 'Id'
             ];
         }
         
